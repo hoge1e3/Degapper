@@ -1,0 +1,13 @@
+<all><program><varDecl><attr_vtype><stype><typeHead><attr_name><symbol>int</symbol></attr_name></typeHead></stype></attr_vtype> <attr_names><varDeclElem><attr_name><symbol>x</symbol></attr_name>=<attr_init><number>20</number></attr_init></varDeclElem></attr_names>;</varDecl>
+<functionDecl><attr_returnType><stype><typeHead><attr_name><symbol>void</symbol></attr_name></typeHead></stype></attr_returnType> <attr_name><symbol>setup</symbol></attr_name><paramDecls>()</paramDecls> <compound>{  
+    <exprstmt><call><attr_name><symbol>background</symbol></attr_name><argList>(<number>255</number>)</argList></call>;</exprstmt>
+    <exprstmt><call><attr_name><symbol>size</symbol></attr_name><argList>(<number>300</number>, <number>300</number>)</argList></call>;</exprstmt> 
+    <exprstmt><call><attr_name><symbol>rect</symbol></attr_name><argList>(<symbol>x</symbol>,<number>20</number>,<number>100</number>,<number>100</number>)</argList></call>;</exprstmt>
+}</compound></functionDecl> 
+
+<functionDecl><attr_returnType><stype><typeHead><attr_name><symbol>void</symbol></attr_name></typeHead></stype></attr_returnType> <attr_name><symbol>draw</symbol></attr_name><paramDecls>()</paramDecls> <compound>{
+    <exprstmt><call><attr_name><symbol>rect</symbol></attr_name><argList>(<symbol>x</symbol>,<number>20</number>,<number>100</number>,<number>100</number>)</argList></call>;</exprstmt>
+	<exprstmt><arithassign><attr_left><symbol>x</symbol></attr_left><attr_op>+=</attr_op><attr_right><number>2</number></attr_right></arithassign>;</exprstmt>
+}</compound></functionDecl>
+
+</program></all>

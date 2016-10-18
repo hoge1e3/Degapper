@@ -1,0 +1,24 @@
+<program>//#include&lt;stdio.h&gt;
+//#include&lt;stdlib.h&gt;
+//#include&lt;time.h&gt;
+<translation_unit><function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator><compound_statement><LEFT_CURL>{</LEFT_CURL>
+	<declaration><int>int</int> <init_declarator_list><IDENT>answer</IDENT>,<IDENT>input</IDENT></init_declarator_list><SEMICOLON>;</SEMICOLON></declaration>
+	<expression_statement><postfix_expression><IDENT>srand</IDENT><LEFT_PAR>(</LEFT_PAR> <postfix_expression><IDENT>time</IDENT><LEFT_PAR>(</LEFT_PAR><IDENT>NULL</IDENT><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+	<expression_statement><assignment_expression><IDENT>answer</IDENT> <ASSIGN>=</ASSIGN><multiplicative_expression><postfix_expression><IDENT>rand</IDENT><LEFT_PAR>(</LEFT_PAR><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><MOD>%</MOD><number>100</number></multiplicative_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+	<while_statement><while>while</while><LEFT_PAR>(</LEFT_PAR><number>1</number><RIGHT_PAR>)</RIGHT_PAR><compound_statement><LEFT_CURL>{</LEFT_CURL>
+		<expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><literal>"数字を入力してあててください\n"</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+		<expression_statement><postfix_expression><IDENT>scanf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"%d"</literal>,<prefix_expression><unary_operator>&amp;</unary_operator><IDENT>input</IDENT></prefix_expression></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+		<if_statement><if>if</if><LEFT_PAR>(</LEFT_PAR><equality_expression><IDENT>input</IDENT><EQ>==</EQ><IDENT>answer</IDENT></equality_expression><RIGHT_PAR>)</RIGHT_PAR><compound_statement><LEFT_CURL>{</LEFT_CURL>
+			<expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><literal>"あたり\n"</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+			<break_statement><break>break</break><SEMICOLON>;</SEMICOLON></break_statement>
+		<RIGHT_CURL>}</RIGHT_CURL></compound_statement></if_statement>
+		<if_statement><if>if</if><LEFT_PAR>(</LEFT_PAR><relational_expression><IDENT>input</IDENT><GT>&gt;</GT><IDENT>answer</IDENT></relational_expression><RIGHT_PAR>)</RIGHT_PAR><compound_statement><LEFT_CURL>{</LEFT_CURL>
+			<expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><literal>"大きい\n"</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+		<RIGHT_CURL>}</RIGHT_CURL></compound_statement></if_statement>
+		<if_statement><if>if</if><LEFT_PAR>(</LEFT_PAR><relational_expression><IDENT>input</IDENT><LT>&lt;</LT><IDENT>answer</IDENT></relational_expression><RIGHT_PAR>)</RIGHT_PAR><compound_statement><LEFT_CURL>{</LEFT_CURL>
+			<expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><literal>"小さい\n"</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+		<RIGHT_CURL>}</RIGHT_CURL></compound_statement></if_statement>
+	<RIGHT_CURL>}</RIGHT_CURL></compound_statement></while_statement>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+</translation_unit></program>

@@ -1,0 +1,11 @@
+<program>//#include&lt;stdio.h&gt;
+<translation_unit><declaration><declaration_specifiers><typedef>typedef</typedef> <struct_or_union_specifier><struct>struct</struct> <LEFT_CURL>{</LEFT_CURL>
+  <struct_declaration_list><struct_declaration><int>int</int> <IDENT>score</IDENT><SEMICOLON>;</SEMICOLON></struct_declaration>
+  <struct_declaration><char>char</char> <direct_declarator><IDENT>name</IDENT><LEFT_BRACKET>[</LEFT_BRACKET><number>20</number><RIGHT_BRACKET>]</RIGHT_BRACKET></direct_declarator><SEMICOLON>;</SEMICOLON></struct_declaration></struct_declaration_list>
+<RIGHT_CURL>}</RIGHT_CURL></struct_or_union_specifier></declaration_specifiers> <IDENT>Rank</IDENT><SEMICOLON>;</SEMICOLON></declaration>
+
+<function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+
+</translation_unit></program>

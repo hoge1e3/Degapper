@@ -1,0 +1,9 @@
+<program>//#include&lt;stdio.h&gt;
+<translation_unit><function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT> <LEFT_PAR>(</LEFT_PAR><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+  <expression_statement><multiplicative_expression><IDENT>FILE</IDENT> <MUL>*</MUL><IDENT>fp</IDENT></multiplicative_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <expression_statement><assignment_expression><IDENT>fp</IDENT><ASSIGN>=</ASSIGN><postfix_expression><IDENT>fopen</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"hello.txt"</literal>,<literal>"w"</literal></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <expression_statement><postfix_expression><IDENT>fprintf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><IDENT>fp</IDENT>,<literal>"%d\n"</literal>, <number>10</number></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <expression_statement><postfix_expression><IDENT>fclose</IDENT><LEFT_PAR>(</LEFT_PAR><IDENT>fp</IDENT><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+</translation_unit></program>

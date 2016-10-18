@@ -1,0 +1,7 @@
+<program>//#include&lt;stdio.h&gt;
+
+<translation_unit><function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+   <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"2 たす 3 は %d です"</literal>, <additive_expression><number>2</number><PLUS>+</PLUS><number>3</number></additive_expression></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+</translation_unit></program>

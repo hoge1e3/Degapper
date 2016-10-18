@@ -1,0 +1,22 @@
+{
+"translation_unit":"全体",
+"function_definition":"関数定義",
+"compound_statement":"複合文",
+"expression_statement":"式文",
+"declaration":"宣言",
+"LEFT_CURL":"{",
+"RIGHT_CURL":"}",
+"LEFT_PAR":"(",
+"RIGHT_PAR":")",
+"postfix_expression":"後置式",
+"prefix_expression":"前置式",
+"IDENT":"識別子",
+"unary_operator": "単項式",
+"equality_expression": "等価式",
+"relational_expression": "比較式",
+"argument_expression_list":"引数リスト",
+"literal":"文字列",
+"additive_expression": "加法式",
+"assignment_expression": "代入式",
+"a":"a"
+}

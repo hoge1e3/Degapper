@@ -1,0 +1,8 @@
+<all><program><functionDecl><attr_returnType><stype><typeHead><attr_name><symbol>void</symbol></attr_name></typeHead></stype></attr_returnType> <attr_name><symbol>setup</symbol></attr_name><paramDecls>()</paramDecls> <compound>{  
+    <exprstmt><call><attr_name><symbol>background</symbol></attr_name><argList>(<number>255</number>)</argList></call>;</exprstmt>
+    <exprstmt><call><attr_name><symbol>size</symbol></attr_name><argList>(<number>300</number>, <number>300</number>)</argList></call>;</exprstmt> 
+    <exprstmt><call><attr_name><symbol>rect</symbol></attr_name><argList>(<number>20</number>,<number>20</number>,<number>100</number>,<number>100</number>)</argList></call>;</exprstmt>
+}</compound></functionDecl> 
+
+
+</program></all>

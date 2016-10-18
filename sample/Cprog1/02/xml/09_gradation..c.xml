@@ -1,0 +1,14 @@
+<program><translation_unit><function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+   <declaration><int>int</int> <init_declarator_list><IDENT>x</IDENT>,<IDENT>i</IDENT>,<IDENT>c</IDENT></init_declarator_list><SEMICOLON>;</SEMICOLON></declaration>
+   <expression_statement><postfix_expression><IDENT>setColor</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><number>255</number>,<number>0</number>,<number>0</number></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement> 
+   <expression_statement><assignment_expression><IDENT>x</IDENT><ASSIGN>=</ASSIGN><number>100</number></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement> <expression_statement><assignment_expression><IDENT>c</IDENT><ASSIGN>=</ASSIGN><number>0</number></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <for_statement><for>for</for> <LEFT_PAR>(</LEFT_PAR><assignment_expression><IDENT>i</IDENT><ASSIGN>=</ASSIGN><number>0</number></assignment_expression><SEMICOLON>;</SEMICOLON> <relational_expression><IDENT>i</IDENT><LT>&lt;</LT><number>10</number></relational_expression> <SEMICOLON>;</SEMICOLON> <postfix_expression><IDENT>i</IDENT>++</postfix_expression><RIGHT_PAR>)</RIGHT_PAR> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+     <expression_statement><postfix_expression><IDENT>setColor</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><IDENT>c</IDENT>, <number>0</number>, <number>0</number></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+     <expression_statement><postfix_expression><IDENT>fillRect</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><IDENT>x</IDENT>, <number>30</number>, <number>10</number>, <number>50</number></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+     <expression_statement><assignment_expression><IDENT>x</IDENT><ASSIGN>=</ASSIGN><additive_expression><IDENT>x</IDENT><PLUS>+</PLUS><number>20</number></additive_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>  <expression_statement><assignment_expression><IDENT>c</IDENT><ASSIGN>=</ASSIGN><additive_expression><IDENT>c</IDENT><PLUS>+</PLUS><number>25</number></additive_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <RIGHT_CURL>}</RIGHT_CURL></compound_statement></for_statement> 
+   <expression_statement><postfix_expression><IDENT>wait</IDENT><LEFT_PAR>(</LEFT_PAR><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition> 
+
+
+</translation_unit></program>

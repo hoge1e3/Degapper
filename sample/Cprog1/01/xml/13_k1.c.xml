@@ -1,0 +1,16 @@
+<program>//#include&lt;stdio.h&gt;
+<translation_unit><function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+   <declaration><int>int</int> <init_declarator_list><IDENT>day</IDENT>,<IDENT>mon</IDENT></init_declarator_list><SEMICOLON>;</SEMICOLON></declaration>
+   <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><literal>"今日は何月： "</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><postfix_expression><IDENT>scanf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"%d"</literal>, <prefix_expression><unary_operator>&amp;</unary_operator><IDENT>mon</IDENT></prefix_expression></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><literal>"今日は何日： "</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><postfix_expression><IDENT>scanf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"%d"</literal>, <prefix_expression><unary_operator>&amp;</unary_operator><IDENT>day</IDENT></prefix_expression></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"今日は %d月%d日です\n"</literal>, <IDENT>mon</IDENT>, <IDENT>day</IDENT></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+　 <expression_statement><assignment_expression><IDENT>day</IDENT><ASSIGN>=</ASSIGN><additive_expression><IDENT>day</IDENT><PLUS>+</PLUS><number>1</number></additive_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"明日は %d月%d日です\n"</literal>, <IDENT>mon</IDENT>, <IDENT>day</IDENT></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+　 <expression_statement><assignment_expression><IDENT>day</IDENT><ASSIGN>=</ASSIGN><additive_expression><IDENT>day</IDENT><MINUS>-</MINUS><number>1</number></additive_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+　 <expression_statement><assignment_expression><IDENT>mon</IDENT><ASSIGN>=</ASSIGN><additive_expression><IDENT>mon</IDENT><PLUS>+</PLUS><number>1</number></additive_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"一ヶ月後は %d月%d日です\n"</literal>, <IDENT>mon</IDENT>, <IDENT>day</IDENT></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+</translation_unit></program>

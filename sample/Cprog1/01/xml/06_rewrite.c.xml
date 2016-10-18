@@ -1,0 +1,10 @@
+<program>//#include&lt;stdio.h&gt;
+<translation_unit><function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+   <declaration><int>int</int> <IDENT>day</IDENT><SEMICOLON>;</SEMICOLON></declaration>
+   <expression_statement><assignment_expression><IDENT>day</IDENT><ASSIGN>=</ASSIGN><number>15</number></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"今日は %d日です\n"</literal>, <IDENT>day</IDENT></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><assignment_expression><IDENT>day</IDENT><ASSIGN>=</ASSIGN><additive_expression><IDENT>day</IDENT><PLUS>+</PLUS><number>1</number></additive_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"明日は %d日です\n "</literal>, <IDENT>day</IDENT></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+</translation_unit></program>

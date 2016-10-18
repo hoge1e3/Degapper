@@ -1,0 +1,9 @@
+<program>//#include&lt;stdio.h&gt;
+<translation_unit><function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+   <declaration><char>char</char> <IDENT>c</IDENT><SEMICOLON>;</SEMICOLON></declaration>
+   <expression_statement><assignment_expression><IDENT>c</IDENT><ASSIGN>=</ASSIGN><character_constant>'A'</character_constant></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>   // 'A' は Aのキャラクタコード(65)
+   <expression_statement><postfix_expression><IDENT>printf</IDENT> <LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"%d\n"</literal>, <IDENT>c</IDENT></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement> // キャラクタコードを表示
+   <expression_statement><postfix_expression><IDENT>printf</IDENT> <LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"%c\n"</literal>, <IDENT>c</IDENT></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement> // 文字を表示
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+</translation_unit></program>

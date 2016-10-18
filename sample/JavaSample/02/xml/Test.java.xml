@@ -1,0 +1,7 @@
+<java><program><classDecl><annotation>public</annotation> class <attr_name><symbol>Test</symbol></attr_name> {
+	<methodDecl><methodDeclHead><annotation>public</annotation> <annotation>static</annotation> <attr_returnType><type><typeHead><symbol>void</symbol></typeHead></type></attr_returnType> <attr_name><symbol>main</symbol></attr_name><paramDecls>(<paramDecl><attr_ptype><type><typeHead><symbol>String</symbol></typeHead> <arrayDecl>[]</arrayDecl></type></attr_ptype><attr_name><symbol>args</symbol></attr_name></paramDecl>)</paramDecls></methodDeclHead><compound>{
+		<varDecl><attr_vtype><type><typeHead><symbol>int</symbol></typeHead></type></attr_vtype> <attr_names><varDeclElem><attr_name><symbol>x</symbol></attr_name>=<attr_init><number>3</number></attr_init></varDeclElem></attr_names>;</varDecl>
+		<exprstmt><postfix><attr_left><postfix><attr_left><postfix><attr_left><symbol>System</symbol></attr_left><attr_op><member>.<attr_name><symbol>out</symbol></attr_name></member></attr_op></postfix></attr_left><attr_op><member>.<attr_name><symbol>println</symbol></attr_name></member></attr_op></postfix></attr_left><attr_op><call>(<infix><attr_left><literal>"x="</literal></attr_left><attr_op>+</attr_op><attr_right><symbol>x</symbol></attr_right></infix>)</call></attr_op></postfix>;</exprstmt>
+	}</compound></methodDecl>
+}</classDecl>
+</program></java>

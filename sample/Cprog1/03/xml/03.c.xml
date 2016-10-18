@@ -1,0 +1,13 @@
+<program>//#include&lt;stdio.h&gt;
+<translation_unit><function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+  <declaration><int>int</int> <IDENT>input</IDENT><SEMICOLON>;</SEMICOLON></declaration>
+  <expression_statement><postfix_expression><IDENT>printf</IDENT> <LEFT_PAR>(</LEFT_PAR><literal>"現在時刻(0-23)? "</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <expression_statement><postfix_expression><IDENT>scanf</IDENT> <LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"%d"</literal>, <prefix_expression><unary_operator>&amp;</unary_operator><IDENT>input</IDENT></prefix_expression></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <if_statement><if>if</if> <LEFT_PAR>(</LEFT_PAR><relational_expression><IDENT>input</IDENT><LT>&lt;</LT><number>12</number></relational_expression><RIGHT_PAR>)</RIGHT_PAR> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+     <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><literal>"おはよう\n"</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <RIGHT_CURL>}</RIGHT_CURL></compound_statement> <else>else</else> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+     <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><literal>"こんにちは\n"</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <RIGHT_CURL>}</RIGHT_CURL></compound_statement></if_statement>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+</translation_unit></program>

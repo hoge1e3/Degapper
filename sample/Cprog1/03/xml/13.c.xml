@@ -1,0 +1,15 @@
+<program><translation_unit><function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+  <declaration><int>int</int> <init_declarator_list><IDENT>x</IDENT>,<IDENT>y</IDENT>,<IDENT>vx</IDENT></init_declarator_list><SEMICOLON>;</SEMICOLON></declaration>
+  <expression_statement><postfix_expression><IDENT>setColor</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><number>255</number>,<number>0</number>,<number>0</number></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <expression_statement><assignment_expression><IDENT>x</IDENT><ASSIGN>=</ASSIGN><number>30</number></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement> <expression_statement><assignment_expression><IDENT>y</IDENT><ASSIGN>=</ASSIGN><number>50</number></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement> 
+  <expression_statement><assignment_expression><IDENT>vx</IDENT><ASSIGN>=</ASSIGN><number>2</number></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <while_statement><while>while</while> <LEFT_PAR>(</LEFT_PAR><relational_expression><IDENT>x</IDENT><LT>&lt;</LT><number>300</number></relational_expression><RIGHT_PAR>)</RIGHT_PAR> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+　　 <expression_statement><postfix_expression><IDENT>clear</IDENT><LEFT_PAR>(</LEFT_PAR><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+     <expression_statement><postfix_expression><IDENT>fillRect</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><IDENT>x</IDENT>,<IDENT>y</IDENT> , <number>50</number>, <number>50</number></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+     <expression_statement><assignment_expression><IDENT>x</IDENT><ASSIGN>=</ASSIGN><additive_expression><IDENT>x</IDENT><PLUS>+</PLUS><IDENT>vx</IDENT></additive_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+     <expression_statement><postfix_expression><IDENT>update</IDENT><LEFT_PAR>(</LEFT_PAR><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+  <RIGHT_CURL>}</RIGHT_CURL></compound_statement></while_statement>
+  <expression_statement><postfix_expression><IDENT>wait</IDENT><LEFT_PAR>(</LEFT_PAR><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+</translation_unit></program>

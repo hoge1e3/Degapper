@@ -1,0 +1,32 @@
+<program>//#include&lt;stdio.h&gt;
+<translation_unit><declaration><declaration_specifiers><typedef>typedef</typedef> <struct_or_union_specifier><struct>struct</struct> <LEFT_CURL>{</LEFT_CURL>
+  <struct_declaration_list><struct_declaration><int>int</int> <IDENT>score</IDENT><SEMICOLON>;</SEMICOLON></struct_declaration>
+  <struct_declaration><char>char</char> <direct_declarator><IDENT>name</IDENT><LEFT_BRACKET>[</LEFT_BRACKET><number>10</number><RIGHT_BRACKET>]</RIGHT_BRACKET></direct_declarator><SEMICOLON>;</SEMICOLON></struct_declaration></struct_declaration_list>
+<RIGHT_CURL>}</RIGHT_CURL></struct_or_union_specifier></declaration_specifiers> <IDENT>Rank</IDENT><SEMICOLON>;</SEMICOLON></declaration>
+
+<function_definition><int>int</int> <direct_declarator><IDENT>main</IDENT><LEFT_PAR>(</LEFT_PAR><void>void</void><RIGHT_PAR>)</RIGHT_PAR></direct_declarator> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+   <declaration><int>int</int> <IDENT>i</IDENT><SEMICOLON>;</SEMICOLON></declaration>
+   <declaration><IDENT>Rank</IDENT> <direct_declarator><IDENT>rank</IDENT><LEFT_BRACKET>[</LEFT_BRACKET><number>5</number><RIGHT_BRACKET>]</RIGHT_BRACKET></direct_declarator><SEMICOLON>;</SEMICOLON></declaration>
+   <expression_statement><multiplicative_expression><IDENT>FILE</IDENT> <MUL>*</MUL><IDENT>fp</IDENT></multiplicative_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   // 読み込み
+   <expression_statement><assignment_expression><IDENT>fp</IDENT><ASSIGN>=</ASSIGN><postfix_expression><IDENT>fopen</IDENT> <LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"rank.txt"</literal>,<literal>"r"</literal></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><assignment_expression><IDENT>i</IDENT><ASSIGN>=</ASSIGN><number>0</number></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <while_statement><while>while</while> <LEFT_PAR>(</LEFT_PAR><number>1</number><RIGHT_PAR>)</RIGHT_PAR> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+      <declaration><int>int</int> <init_declarator><IDENT>r</IDENT>=<postfix_expression><IDENT>fscanf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><IDENT>fp</IDENT>, <literal>"%d %9s"</literal>, <prefix_expression><unary_operator>&amp;</unary_operator><postfix_expression><postfix_expression><IDENT>rank</IDENT><LEFT_BRACKET>[</LEFT_BRACKET><IDENT>i</IDENT><RIGHT_BRACKET>]</RIGHT_BRACKET></postfix_expression>.<IDENT>score</IDENT></postfix_expression></prefix_expression>, <postfix_expression><postfix_expression><IDENT>rank</IDENT><LEFT_BRACKET>[</LEFT_BRACKET><IDENT>i</IDENT><RIGHT_BRACKET>]</RIGHT_BRACKET></postfix_expression>.<IDENT>name</IDENT></postfix_expression></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression></init_declarator><SEMICOLON>;</SEMICOLON></declaration>
+      <if_statement><if>if</if> <LEFT_PAR>(</LEFT_PAR><equality_expression><IDENT>r</IDENT><EQ>==</EQ><IDENT>EOF</IDENT></equality_expression><RIGHT_PAR>)</RIGHT_PAR> <break_statement><break>break</break><SEMICOLON>;</SEMICOLON></break_statement></if_statement>
+      <expression_statement><postfix_expression><IDENT>i</IDENT>++</postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <RIGHT_CURL>}</RIGHT_CURL></compound_statement></while_statement>
+   // 名前の登録
+   <expression_statement><postfix_expression><IDENT>printf</IDENT><LEFT_PAR>(</LEFT_PAR><literal>"Input your name:"</literal><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><postfix_expression><IDENT>scanf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"%9s"</literal>, <postfix_expression><postfix_expression><IDENT>rank</IDENT><LEFT_BRACKET>[</LEFT_BRACKET><number>4</number><RIGHT_BRACKET>]</RIGHT_BRACKET></postfix_expression>.<IDENT>name</IDENT></postfix_expression></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <expression_statement><assignment_expression><postfix_expression><postfix_expression><IDENT>rank</IDENT><LEFT_BRACKET>[</LEFT_BRACKET><number>4</number><RIGHT_BRACKET>]</RIGHT_BRACKET></postfix_expression>.<IDENT>score</IDENT></postfix_expression><ASSIGN>=</ASSIGN><number>100</number></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   // 書き込み
+   <expression_statement><assignment_expression><IDENT>fp</IDENT><ASSIGN>=</ASSIGN><postfix_expression><IDENT>fopen</IDENT> <LEFT_PAR>(</LEFT_PAR><argument_expression_list><literal>"rank.txt"</literal>,<literal>"w"</literal></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression></assignment_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <for_statement><for>for</for> <LEFT_PAR>(</LEFT_PAR><assignment_expression><IDENT>i</IDENT><ASSIGN>=</ASSIGN><number>0</number></assignment_expression> <SEMICOLON>;</SEMICOLON> <relational_expression><IDENT>i</IDENT><LT>&lt;</LT><number>5</number></relational_expression><SEMICOLON>;</SEMICOLON> <postfix_expression><IDENT>i</IDENT>++</postfix_expression><RIGHT_PAR>)</RIGHT_PAR> <compound_statement><LEFT_CURL>{</LEFT_CURL>
+      <expression_statement><postfix_expression><IDENT>fprintf</IDENT><LEFT_PAR>(</LEFT_PAR><argument_expression_list><IDENT>fp</IDENT>,<literal>"%d %s\n"</literal>, <postfix_expression><postfix_expression><IDENT>rank</IDENT><LEFT_BRACKET>[</LEFT_BRACKET><IDENT>i</IDENT><RIGHT_BRACKET>]</RIGHT_BRACKET></postfix_expression>.<IDENT>score</IDENT></postfix_expression>, <postfix_expression><postfix_expression><IDENT>rank</IDENT><LEFT_BRACKET>[</LEFT_BRACKET><IDENT>i</IDENT><RIGHT_BRACKET>]</RIGHT_BRACKET></postfix_expression>.<IDENT>name</IDENT></postfix_expression></argument_expression_list><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+   <RIGHT_CURL>}</RIGHT_CURL></compound_statement></for_statement>
+   <expression_statement><postfix_expression><IDENT>fclose</IDENT> <LEFT_PAR>(</LEFT_PAR><IDENT>fp</IDENT><RIGHT_PAR>)</RIGHT_PAR></postfix_expression><SEMICOLON>;</SEMICOLON></expression_statement>
+<RIGHT_CURL>}</RIGHT_CURL></compound_statement></function_definition>
+
+
+</translation_unit></program>

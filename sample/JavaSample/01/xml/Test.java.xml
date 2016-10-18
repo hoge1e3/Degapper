@@ -1,0 +1,6 @@
+<java><program><classDecl><annotation>public</annotation> class <attr_name><symbol>Test</symbol></attr_name> {
+	<methodDecl><methodDeclHead><annotation>public</annotation> <annotation>static</annotation> <attr_returnType><type><typeHead><symbol>void</symbol></typeHead></type></attr_returnType> <attr_name><symbol>main</symbol></attr_name><paramDecls>(<paramDecl><attr_ptype><type><typeHead><symbol>String</symbol></typeHead> <arrayDecl>[]</arrayDecl></type></attr_ptype><attr_name><symbol>args</symbol></attr_name></paramDecl>)</paramDecls></methodDeclHead><compound>{
+		<exprstmt><postfix><attr_left><postfix><attr_left><postfix><attr_left><symbol>System</symbol></attr_left><attr_op><member>.<attr_name><symbol>out</symbol></attr_name></member></attr_op></postfix></attr_left><attr_op><member>.<attr_name><symbol>println</symbol></attr_name></member></attr_op></postfix></attr_left><attr_op><call>(<literal>"Hello world"</literal>)</call></attr_op></postfix>;</exprstmt>
+	}</compound></methodDecl>
+}</classDecl>
+</program></java>
